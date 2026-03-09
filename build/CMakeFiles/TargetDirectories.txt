@@ -1,0 +1,3 @@
+/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles/lms.dir
+/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles/edit_cache.dir
+/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles/rebuild_cache.dir

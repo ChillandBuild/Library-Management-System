@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/prem/.gemini/antigravity/scratch/library-management-system/build",
+  "command": "/usr/bin/c++  -I/Users/prem/.gemini/antigravity/scratch/library-management-system/include -I/Users/prem/.gemini/antigravity/scratch/library-management-system/src -std=gnu++17 -arch arm64 -o CMakeFiles/lms.dir/src/db/database.cpp.o -c /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp",
+  "file": "/Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp",
+  "output": "CMakeFiles/lms.dir/src/db/database.cpp.o"
+},
+{
+  "directory": "/Users/prem/.gemini/antigravity/scratch/library-management-system/build",
+  "command": "/usr/bin/c++  -I/Users/prem/.gemini/antigravity/scratch/library-management-system/include -I/Users/prem/.gemini/antigravity/scratch/library-management-system/src -std=gnu++17 -arch arm64 -o CMakeFiles/lms.dir/src/main.cpp.o -c /Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp",
+  "file": "/Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp",
+  "output": "CMakeFiles/lms.dir/src/main.cpp.o"
+}
+]
