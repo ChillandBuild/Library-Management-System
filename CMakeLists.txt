@@ -8,6 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # Find required packages
 find_package(SQLite3 REQUIRED)
 find_package(Threads REQUIRED)
+find_package(OpenSSL REQUIRED)
 
 # Collect source files
 file(GLOB_RECURSE SOURCES
@@ -28,6 +29,8 @@ target_include_directories(lms PRIVATE
 target_link_libraries(lms PRIVATE
     SQLite::SQLite3
     Threads::Threads
+    OpenSSL::SSL
+    OpenSSL::Crypto
 )
 
 # macOS specific

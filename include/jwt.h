@@ -1,7 +1,12 @@
 #pragma once
 
 #include "json.hpp"
+#ifdef __APPLE__
 #include <CommonCrypto/CommonHMAC.h>
+#else
+#include <openssl/evp.h>
+#include <openssl/hmac.h>
+#endif
 #include <chrono>
 #include <iomanip>
 #include <sstream>
@@ -81,10 +86,18 @@ inline std::string base64url_decode(const std::string &input) {
 
 inline std::string hmac_sha256(const std::string &key,
                                const std::string &data) {
+#ifdef __APPLE__
   unsigned char result[CC_SHA256_DIGEST_LENGTH];
   CCHmac(kCCHmacAlgSHA256, key.c_str(), key.length(), data.c_str(),
          data.length(), result);
   return std::string(reinterpret_cast<char *>(result), CC_SHA256_DIGEST_LENGTH);
+#else
+  unsigned int result_len = EVP_MAX_MD_SIZE;
+  unsigned char result[EVP_MAX_MD_SIZE];
+  HMAC(EVP_sha256(), key.c_str(), key.length(),
+       (const unsigned char *)data.c_str(), data.length(), result, &result_len);
+  return std::string(reinterpret_cast<char *>(result), result_len);
+#endif
 }
 
 const std::string SECRET_KEY = "lms_jwt_secret_key_change_in_production_2024";

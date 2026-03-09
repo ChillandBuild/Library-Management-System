@@ -1,6 +1,10 @@
 #pragma once
 
+#ifdef __APPLE__
 #include <CommonCrypto/CommonDigest.h>
+#else
+#include <openssl/evp.h>
+#endif
 #include <cstring>
 #include <iomanip>
 #include <random>
@@ -25,6 +29,7 @@ inline std::string generateSalt(int length = 32) {
 }
 
 inline std::string sha256(const std::string &input) {
+#ifdef __APPLE__
   unsigned char hash[CC_SHA256_DIGEST_LENGTH];
   CC_SHA256(input.c_str(), static_cast<CC_LONG>(input.length()), hash);
 
@@ -33,6 +38,21 @@ inline std::string sha256(const std::string &input) {
     ss << std::hex << std::setfill('0') << std::setw(2)
        << static_cast<int>(hash[i]);
   }
+#else
+  unsigned char hash[EVP_MAX_MD_SIZE];
+  unsigned int hash_len;
+  EVP_MD_CTX *mdctx = EVP_MD_CTX_new();
+  EVP_DigestInit_ex(mdctx, EVP_sha256(), NULL);
+  EVP_DigestUpdate(mdctx, input.c_str(), input.length());
+  EVP_DigestFinal_ex(mdctx, hash, &hash_len);
+  EVP_MD_CTX_free(mdctx);
+
+  std::stringstream ss;
+  for (unsigned int i = 0; i < hash_len; i++) {
+    ss << std::hex << std::setfill('0') << std::setw(2)
+       << static_cast<int>(hash[i]);
+  }
+#endif
   return ss.str();
 }
 
