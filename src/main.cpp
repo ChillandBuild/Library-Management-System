@@ -1,4 +1,5 @@
 #include <csignal>
+#include <cstdlib>
 #include <iostream>
 #include <string>
 
@@ -185,6 +186,9 @@ int main(int argc, char *argv[]) {
 
   // Configuration
   int port = 8080;
+  if (const char *env_p = std::getenv("PORT")) {
+    port = std::stoi(env_p);
+  }
   std::string dbPath = "library.db";
 
   for (int i = 1; i < argc; i++) {
