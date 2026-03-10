@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/prem/.gemini/antigravity/scratch/library-management-system/include -I/Users/prem/.gemini/antigravity/scratch/library-management-system/src
+CXX_INCLUDES = -I"/Users/prem/Desktop/Library Management System/include" -I"/Users/prem/Desktop/Library Management System/src" -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

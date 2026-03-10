@@ -1,6 +1,6 @@
 CMakeFiles/lms.dir/src/db/database.cpp.o: \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/db/database.cpp \
+  /Users/prem/Desktop/Library\ Management\ System/src/db/database.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -778,7 +778,7 @@ CMakeFiles/lms.dir/src/db/database.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sqlite3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/os/availability.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/include/json.hpp \
+  /Users/prem/Desktop/Library\ Management\ System/include/json.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \

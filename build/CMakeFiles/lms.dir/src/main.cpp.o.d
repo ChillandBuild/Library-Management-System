@@ -1,5 +1,5 @@
 CMakeFiles/lms.dir/src/main.cpp.o: \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp \
+  /Users/prem/Desktop/Library\ Management\ System/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/csignal \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -793,11 +793,11 @@ CMakeFiles/lms.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/controllers/auth_controller.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/controllers/auth_controller.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/db/database.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sqlite3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/os/availability.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/include/json.hpp \
+  /Users/prem/Desktop/Library\ Management\ System/include/json.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
@@ -842,7 +842,7 @@ CMakeFiles/lms.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/any \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/include/httplib.h \
+  /Users/prem/Desktop/Library\ Management\ System/include/httplib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arpa/inet.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/netinet/in.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/socket.h \
@@ -931,14 +931,14 @@ CMakeFiles/lms.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/include/jwt.h \
+  /Users/prem/Desktop/Library\ Management\ System/include/jwt.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/CommonCrypto/CommonHMAC.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/CommonCrypto/CommonDigest.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/middleware/auth_middleware.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/utils/password.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/controllers/catalog_controller.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/controllers/circulation_controller.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/controllers/fine_controller.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/controllers/member_controller.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/controllers/report_controller.h \
-  /Users/prem/.gemini/antigravity/scratch/library-management-system/src/controllers/search_controller.h
+  /Users/prem/Desktop/Library\ Management\ System/src/middleware/auth_middleware.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/utils/password.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/controllers/catalog_controller.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/controllers/circulation_controller.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/controllers/fine_controller.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/controllers/member_controller.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/controllers/report_controller.h \
+  /Users/prem/Desktop/Library\ Management\ System/src/controllers/search_controller.h

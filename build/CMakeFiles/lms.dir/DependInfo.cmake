@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp" "CMakeFiles/lms.dir/src/db/database.cpp.o" "gcc" "CMakeFiles/lms.dir/src/db/database.cpp.o.d"
-  "/Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp" "CMakeFiles/lms.dir/src/main.cpp.o" "gcc" "CMakeFiles/lms.dir/src/main.cpp.o.d"
+  "/Users/prem/Desktop/Library Management System/src/db/database.cpp" "CMakeFiles/lms.dir/src/db/database.cpp.o" "gcc" "CMakeFiles/lms.dir/src/db/database.cpp.o.d"
+  "/Users/prem/Desktop/Library Management System/src/main.cpp" "CMakeFiles/lms.dir/src/main.cpp.o" "gcc" "CMakeFiles/lms.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

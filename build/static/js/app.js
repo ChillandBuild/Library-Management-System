@@ -98,6 +98,7 @@ function showToast(message, type = 'info') {
 const navConfig = [
     { id: 'dashboard', icon: '📊', label: 'Dashboard', roles: ['librarian', 'branch_manager', 'admin'] },
     { id: 'circulation', icon: '🔄', label: 'Circulation', roles: ['librarian', 'branch_manager', 'admin'], section: 'Operations' },
+    { id: 'holds', icon: '📋', label: 'Holds Management', roles: ['librarian', 'branch_manager', 'admin'], section: 'Operations' },
     { id: 'search', icon: '🔍', label: 'Search Catalog', roles: ['member', 'librarian', 'branch_manager', 'admin'] },
     { id: 'members', icon: '👥', label: 'Members', roles: ['librarian', 'branch_manager', 'admin'], section: 'Management' },
     { id: 'catalog', icon: '📖', label: 'Catalog', roles: ['librarian', 'branch_manager', 'admin'] },
@@ -154,6 +155,7 @@ async function renderPage(page) {
         switch (page) {
             case 'dashboard': await renderDashboard(content); break;
             case 'circulation': renderCirculation(content); break;
+            case 'holds': await renderHolds(content); break;
             case 'search': await renderSearch(content); break;
             case 'members': await renderMembers(content); break;
             case 'catalog': await renderCatalog(content); break;
@@ -479,6 +481,32 @@ window.viewItem = async function (id) {
             <p class="text-sm text-muted mt-1">Active holds: ${item.hold_count || 0}</p>`);
     } catch (e) { }
 };
+
+// ============================================================
+// MEMBERS
+// ============================================================
+async function renderHolds(el) {
+    const data = await api('/holds?per_page=100');
+    if (!data) return;
+
+    el.innerHTML = `
+        <div class="page-header">
+            <div><h1 class="page-title">Holds Management</h1><p class="page-subtitle">${data.count || 0} holds</p></div>
+        </div>
+        <div class="table-container"><table>
+            <thead><tr><th>Hold Date</th><th>Title</th><th>Member</th><th>Branch</th><th>Position</th><th>Status</th></tr></thead>
+            <tbody>
+                ${(data.data || []).map(h => `<tr>
+                    <td class="text-sm">${h.hold_date || '—'}</td>
+                    <td class="fw-600">${h.title}</td>
+                    <td>${h.first_name ? h.first_name + ' ' + h.last_name : 'ID: ' + h.member_id}</td>
+                    <td>${h.branch_name || '—'}</td>
+                    <td>${h.queue_position || '—'}</td>
+                    <td>${statusBadge(h.status)}</td>
+                </tr>`).join('') || '<tr><td colspan="6" class="text-muted" style="text-align:center">No holds</td></tr>'}
+            </tbody>
+        </table></div>`;
+}
 
 // ============================================================
 // MEMBERS

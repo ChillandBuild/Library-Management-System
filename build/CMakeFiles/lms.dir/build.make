@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/prem/.gemini/antigravity/scratch/library-management-system
+CMAKE_SOURCE_DIR = "/Users/prem/Desktop/Library Management System"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/prem/.gemini/antigravity/scratch/library-management-system/build
+CMAKE_BINARY_DIR = "/Users/prem/Desktop/Library Management System/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lms.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/lms.dir/codegen:
 .PHONY : CMakeFiles/lms.dir/codegen
 
 CMakeFiles/lms.dir/src/db/database.cpp.o: CMakeFiles/lms.dir/flags.make
-CMakeFiles/lms.dir/src/db/database.cpp.o: /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp
+CMakeFiles/lms.dir/src/db/database.cpp.o: /Users/prem/Desktop/Library\ Management\ System/src/db/database.cpp
 CMakeFiles/lms.dir/src/db/database.cpp.o: CMakeFiles/lms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lms.dir/src/db/database.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lms.dir/src/db/database.cpp.o -MF CMakeFiles/lms.dir/src/db/database.cpp.o.d -o CMakeFiles/lms.dir/src/db/database.cpp.o -c /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/prem/Desktop/Library Management System/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lms.dir/src/db/database.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lms.dir/src/db/database.cpp.o -MF CMakeFiles/lms.dir/src/db/database.cpp.o.d -o CMakeFiles/lms.dir/src/db/database.cpp.o -c "/Users/prem/Desktop/Library Management System/src/db/database.cpp"
 
 CMakeFiles/lms.dir/src/db/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lms.dir/src/db/database.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp > CMakeFiles/lms.dir/src/db/database.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/prem/Desktop/Library Management System/src/db/database.cpp" > CMakeFiles/lms.dir/src/db/database.cpp.i
 
 CMakeFiles/lms.dir/src/db/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lms.dir/src/db/database.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/database.cpp -o CMakeFiles/lms.dir/src/db/database.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/prem/Desktop/Library Management System/src/db/database.cpp" -o CMakeFiles/lms.dir/src/db/database.cpp.s
 
 CMakeFiles/lms.dir/src/main.cpp.o: CMakeFiles/lms.dir/flags.make
-CMakeFiles/lms.dir/src/main.cpp.o: /Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp
+CMakeFiles/lms.dir/src/main.cpp.o: /Users/prem/Desktop/Library\ Management\ System/src/main.cpp
 CMakeFiles/lms.dir/src/main.cpp.o: CMakeFiles/lms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lms.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lms.dir/src/main.cpp.o -MF CMakeFiles/lms.dir/src/main.cpp.o.d -o CMakeFiles/lms.dir/src/main.cpp.o -c /Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/prem/Desktop/Library Management System/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lms.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lms.dir/src/main.cpp.o -MF CMakeFiles/lms.dir/src/main.cpp.o.d -o CMakeFiles/lms.dir/src/main.cpp.o -c "/Users/prem/Desktop/Library Management System/src/main.cpp"
 
 CMakeFiles/lms.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lms.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp > CMakeFiles/lms.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/prem/Desktop/Library Management System/src/main.cpp" > CMakeFiles/lms.dir/src/main.cpp.i
 
 CMakeFiles/lms.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lms.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/prem/.gemini/antigravity/scratch/library-management-system/src/main.cpp -o CMakeFiles/lms.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/prem/Desktop/Library Management System/src/main.cpp" -o CMakeFiles/lms.dir/src/main.cpp.s
 
 # Object files for target lms
 lms_OBJECTS = \
@@ -112,13 +112,15 @@ lms: CMakeFiles/lms.dir/src/db/database.cpp.o
 lms: CMakeFiles/lms.dir/src/main.cpp.o
 lms: CMakeFiles/lms.dir/build.make
 lms: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libsqlite3.tbd
+lms: /opt/homebrew/lib/libssl.dylib
+lms: /opt/homebrew/lib/libcrypto.dylib
 lms: CMakeFiles/lms.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/prem/Desktop/Library Management System/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lms"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lms.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying static files to build directory"
-	/opt/homebrew/bin/cmake -E copy_directory /Users/prem/.gemini/antigravity/scratch/library-management-system/static /Users/prem/.gemini/antigravity/scratch/library-management-system/build/static
+	/opt/homebrew/bin/cmake -E copy_directory /Users/prem/Desktop/Library\ Management\ System/static /Users/prem/Desktop/Library\ Management\ System/build/static
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Copying schema.sql to build directory"
-	/opt/homebrew/bin/cmake -E copy /Users/prem/.gemini/antigravity/scratch/library-management-system/src/db/schema.sql /Users/prem/.gemini/antigravity/scratch/library-management-system/build/schema.sql
+	/opt/homebrew/bin/cmake -E copy /Users/prem/Desktop/Library\ Management\ System/src/db/schema.sql /Users/prem/Desktop/Library\ Management\ System/build/schema.sql
 
 # Rule to build all files generated by this target.
 CMakeFiles/lms.dir/build: lms
@@ -129,6 +131,6 @@ CMakeFiles/lms.dir/clean:
 .PHONY : CMakeFiles/lms.dir/clean
 
 CMakeFiles/lms.dir/depend:
-	cd /Users/prem/.gemini/antigravity/scratch/library-management-system/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/prem/.gemini/antigravity/scratch/library-management-system /Users/prem/.gemini/antigravity/scratch/library-management-system /Users/prem/.gemini/antigravity/scratch/library-management-system/build /Users/prem/.gemini/antigravity/scratch/library-management-system/build /Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles/lms.dir/DependInfo.cmake "--color=$(COLOR)" lms
+	cd "/Users/prem/Desktop/Library Management System/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/prem/Desktop/Library Management System" "/Users/prem/Desktop/Library Management System" "/Users/prem/Desktop/Library Management System/build" "/Users/prem/Desktop/Library Management System/build" "/Users/prem/Desktop/Library Management System/build/CMakeFiles/lms.dir/DependInfo.cmake" "--color=$(COLOR)" lms
 .PHONY : CMakeFiles/lms.dir/depend
 

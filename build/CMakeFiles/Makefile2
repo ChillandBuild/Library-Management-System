@@ -54,10 +54,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/prem/.gemini/antigravity/scratch/library-management-system
+CMAKE_SOURCE_DIR = "/Users/prem/Desktop/Library Management System"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/prem/.gemini/antigravity/scratch/library-management-system/build
+CMAKE_BINARY_DIR = "/Users/prem/Desktop/Library Management System/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/lms.dir/clean
 CMakeFiles/lms.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lms.dir/build.make CMakeFiles/lms.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lms.dir/build.make CMakeFiles/lms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles --progress-num=1,2,3 "Built target lms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/prem/Desktop/Library Management System/build/CMakeFiles" --progress-num=1,2,3 "Built target lms"
 .PHONY : CMakeFiles/lms.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lms.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/prem/Desktop/Library Management System/build/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lms.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/prem/Desktop/Library Management System/build/CMakeFiles" 0
 .PHONY : CMakeFiles/lms.dir/rule
 
 # Convenience name for target.
@@ -102,7 +102,7 @@ lms: CMakeFiles/lms.dir/rule
 # codegen rule for target.
 CMakeFiles/lms.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lms.dir/build.make CMakeFiles/lms.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/prem/.gemini/antigravity/scratch/library-management-system/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target lms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/prem/Desktop/Library Management System/build/CMakeFiles" --progress-num=1,2,3 "Finished codegen for target lms"
 .PHONY : CMakeFiles/lms.dir/codegen
 
 # clean rule for target.

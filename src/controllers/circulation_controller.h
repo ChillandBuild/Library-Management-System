@@ -85,13 +85,30 @@ inline void registerRoutes(httplib::Server &svr) {
       return;
     }
     if (copy["status"].get<std::string>() != "available") {
-      res.status = 409;
-      res.set_content(
-          json{{"error", "Item is not available (status: " +
-                             copy["status"].get<std::string>() + ")"}}
-              .dump(),
-          "application/json");
-      return;
+      // Allow checkout if the item is on_hold AND the member checking out is
+      // the one who has the hold
+      if (copy["status"].get<std::string>() == "on_hold") {
+        auto holdCheck = db.queryOne(
+            "SELECT id FROM holds WHERE catalog_item_id = ? AND member_id = ? "
+            "AND status = 'ready'",
+            {std::to_string(copy["catalog_item_id"].get<int>()), memberId});
+        if (holdCheck.is_null()) {
+          res.status = 409;
+          res.set_content(
+              json{{"error", "Item is on hold for another member"}}.dump(),
+              "application/json");
+          return;
+        }
+        // If they have the hold, we will fulfill it below.
+      } else {
+        res.status = 409;
+        res.set_content(
+            json{{"error", "Item is not available (status: " +
+                               copy["status"].get<std::string>() + ")"}}
+                .dump(),
+            "application/json");
+        return;
+      }
     }
 
     // Check circulation rules
@@ -143,6 +160,15 @@ inline void registerRoutes(httplib::Server &svr) {
     db.execute("UPDATE copies SET status = 'on_loan', updated_at = "
                "datetime('now') WHERE id = ?",
                {copyId});
+
+    // If there was a hold, mark it fulfilled
+    if (copy["status"].get<std::string>() == "on_hold") {
+      db.execute(
+          "UPDATE holds SET status = 'fulfilled', updated_at = "
+          "datetime('now') WHERE catalog_item_id = ? AND member_id = ? AND "
+          "status = 'ready'",
+          {std::to_string(copy["catalog_item_id"].get<int>()), memberId});
+    }
 
     int64_t loanId = db.lastInsertId();
     auto loan =
@@ -495,9 +521,11 @@ inline void registerRoutes(httplib::Server &svr) {
 
     auto &db = Database::instance();
     std::string sql =
-        "SELECT h.*, ci.title, ci.authors, b.name as branch_name "
+        "SELECT h.*, ci.title, ci.authors, b.name as branch_name, "
+        "m.first_name, m.last_name "
         "FROM holds h JOIN catalog_items ci ON h.catalog_item_id = ci.id "
-        "JOIN branches b ON h.pickup_branch_id = b.id";
+        "JOIN branches b ON h.pickup_branch_id = b.id "
+        "JOIN members m ON h.member_id = m.id";
     std::vector<std::string> params;
 
     if (user.role == "member") {
